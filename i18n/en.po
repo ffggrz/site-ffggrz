@@ -22,6 +22,11 @@ msgstr ""
 "Gera-Greiz servers. "
 "To register the key send it together with your node's name (<em><%=hostname%></em>) to "
 "<a href=\"mailto:keys@freifunk-gera-greiz.de\">keys@freifunk-gera-greiz.de</a>."
+"<div class=\"the-key\">"
+" # <%= hostname %>"
+" <br/>"
+"<%= pubkey %>"
+"</div>"
 
 
 msgid "gluon-config-mode:reboot"
