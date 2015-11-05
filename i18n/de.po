@@ -36,3 +36,19 @@ msgstr ""
 "Betrieb für drei Sekunden den Reset-Button. Das Gerät wird dann im Config "
 "Mode neustarten.</p>"
 "<p>Viel Spaß mit deinem Knoten und der Erkundung von Freifunk!</p>"
+
+msgid "gluon-luci-node-role:role:node"
+msgstr ""
+"Normaler Knoten"
+
+msgid "gluon-luci-node-role:role:test"
+msgstr ""
+"Knoten zum Testen"
+
+msgid "gluon-luci-node-role:role:backbone"
+msgstr ""
+"Knoten im Backbone"
+
+msgid "gluon-luci-node-role:role:service"
+msgstr ""
+"Knoten mit Dienst"
