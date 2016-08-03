@@ -24,7 +24,7 @@ msgstr ""
 "<dd>"
 "Die Angabe einer E-Mail Adresse wird dringend empfohlen. Mit dieser können wir dich erreichen falls es ein Problem mit deinem Freifunk-Knoten gibt. "
 "Beachte jedoch, dass die Adresse öffentlich einsehbar ist. "
-"Deswegen kannst Du auf Anfrage auch eine Adresse in der Form <name@freifunk-gera-greiz.de> von uns bekommen, von welcher dann an eine beliebige Adresse weitergeleitet wird."
+"Deswegen kannst Du auf Anfrage auch eine Adresse in der Form &lt;name&commat;freifunk-gera-greiz.de&gt; von uns bekommen, von welcher dann an eine beliebige Adresse weitergeleitet wird."
 "</dd>"
 "</dl>"
 
