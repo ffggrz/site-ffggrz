@@ -8,7 +8,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-mesh-batman-adv-15 \
 	gluon-alfred \
 	gluon-respondd \
-	gluon-authorized-keys \
 	gluon-autoupdater \
 	gluon-config-mode-autoupdater \
 	gluon-config-mode-contact-info \
@@ -31,7 +30,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-radvd \
 	gluon-setup-mode \
 	gluon-status-page \
-	gluon-upgrade-special \
 	haveged \
 	iptables \
 	iwinfo
@@ -57,6 +55,12 @@ GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 # Default priority for updates.
 GLUON_PRIORITY ?= 0
+
+# Region code required for some images; supported values: us eu
+GLUON_REGION ?= eu
+
+# Mesh protocol for ath10k-based devices (11s or ibss)
+GLUON_ATH10K_MESH ?= 11s
 
 # Languages to include
 GLUON_LANGS ?= en de
