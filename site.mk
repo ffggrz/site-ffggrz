@@ -30,6 +30,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-setup-mode \
 	gluon-status-page \
 	gluon-mesh-vpn-tunneldigger \
+	gluon-tunneldigger-watchdog \
 	haveged \
 	iptables \
 	iwinfo
