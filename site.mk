@@ -58,5 +58,8 @@ GLUON_PRIORITY ?= 0
 # Region code required for some images; supported values: us eu
 GLUON_REGION ?= eu
 
+# Mesh protocol for ath10k-based devices (11s or ibss)
+GLUON_ATH10K_MESH ?= 11s
+
 # Languages to include
 GLUON_LANGS ?= en de
