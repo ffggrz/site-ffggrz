@@ -24,7 +24,6 @@ GLUON_SITE_PACKAGES := \
 	gluon-luci-private-wifi \
 	gluon-luci-wifi-config \
 	gluon-neighbour-info \
-	gluon-next-node \
 	gluon-radvd \
 	gluon-setup-mode \
 	gluon-status-page \
