@@ -3,22 +3,22 @@
 #
 # In most cases, it is not required so don't add it.
 
-##	GLUON_SITE_FEEDS
-#		for each feed name given, add the corresponding PACKAGES_* lines
-#		documented below
-#GLUON_SITE_FEEDS='ffggrz_packages ffrl_packages'
+##      GLUON_SITE_FEEDS
+#               for each feed name given, add the corresponding PACKAGES_* lines
+#               documented below
+GLUON_SITE_FEEDS='ffggrz_packages tunneldigger_packages'
 
-##	PACKAGES_$feedname_REPO
-#		the  git repository from where to clone the package feed
-#PACKAGES_FFGGRZ_PACKAGES_REPO=https://github.com/ffggrz/ffggrz-packages.git
-#PACKAGES_FFRL_PACKAGES_REPO=https://github.com/ffrl/ffrl-packages.git
+##      PACKAGES_$feedname_REPO
+#               the  git repository from where to clone the package feed
+PACKAGES_FFGGRZ_PACKAGES_REPO=https://github.com/ffggrz/ffggrz-packages.git
+PACKAGES_TUNNELDIGGER_PACKAGES_REPO=https://github.com/ffggrz/tunneldigger-packages.git
 
-##	PACKAGES_$feedname_COMMIT
-#		the version/commit of the git repository to clone
-#PACKAGES_FFGGRZ_PACKAGES_COMMIT=b0ac14a12cafd914cfd96f2ad1ef11a303eca1a7
-#PACKAGES_FFRL_PACKAGES_COMMIT=9ef54396cf79031b1b7e35af038b8a0f2ec1bd90
+##      PACKAGES_$feedname_COMMIT
+#               the version/commit of the git repository to clone
+PACKAGES_FFGGRZ_PACKAGES_COMMIT=e54aea7be8357df04f1b4c3111d15cbfdfb9b422
+PACKAGES_TUNNELDIGGER_PACKAGES_COMMIT=e01ac7fadbbccb1fbdd54642a631b7b45a96b130
 
 ##  PACKAGES_$feedname_BRANCH
 #   the branch to check out
-#PACKAGES_FFGGRZ_PACKAGES_BRANCH=master
-#PACKAGES_FFRL_PACKAGES_BRANCH=master
+PACKAGES_FFGGRZ_PACKAGES_BRANCH=master
+PACKAGES_TUNNELDIGGER_PACKAGES_BRANCH=Branch_v2016.2.x
