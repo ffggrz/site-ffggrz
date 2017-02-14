@@ -15,7 +15,7 @@ PACKAGES_TUNNELDIGGER_PACKAGES_REPO=https://github.com/ffggrz/tunneldigger-packa
 
 ##	PACKAGES_$feedname_COMMIT
 #		the version/commit of the git repository to clone
-PACKAGES_FFGGRZ_PACKAGES_COMMIT=b0ac14a12cafd914cfd96f2ad1ef11a303eca1a7
+PACKAGES_FFGGRZ_PACKAGES_COMMIT=e54aea7be8357df04f1b4c3111d15cbfdfb9b422
 PACKAGES_TUNNELDIGGER_PACKAGES_COMMIT=beb46fa1e48ee2e03aac2d90b71cb541794b98ed
 
 ##  PACKAGES_$feedname_BRANCH
