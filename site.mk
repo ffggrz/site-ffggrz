@@ -5,7 +5,6 @@
 #		The gluon-mesh-batman-adv-* package must come first because of the dependency resolution
 
 GLUON_SITE_PACKAGES := \
-	gluon-mesh-batman-adv-15 \
 	gluon-alfred \
 	gluon-respondd \
 	gluon-autoupdater \
@@ -14,23 +13,22 @@ GLUON_SITE_PACKAGES := \
 	gluon-config-mode-core \
 	gluon-config-mode-geo-location \
 	gluon-config-mode-hostname \
-	gluon-config-mode-mesh-vpn \
+	gluon-config-mode-tunneldigger \
 	gluon-ebtables-filter-multicast \
 	gluon-ebtables-filter-ra-dhcp \
-	gluon-luci-admin \
-	gluon-luci-mesh-vpn-fastd \
-	gluon-luci-autoupdater \
-	gluon-luci-node-role \
-	gluon-luci-portconfig \
-	gluon-luci-private-wifi \
-	gluon-luci-wifi-config \
+	gluon-web-admin \
+	gluon-web-autoupdater \
+	gluon-web-node-role \
+	gluon-web-network \
+	gluon-web-private-wifi \
+	gluon-web-wifi-config \
 	gluon-neighbour-info \
-	gluon-mesh-vpn-fastd \
+	gluon-mesh-batman-adv-15 \
+	gluon-mesh-vpn-tunneldigger \
+	gluon-migrate-vpn \
 	gluon-radvd \
 	gluon-setup-mode \
 	gluon-status-page \
-	gluon-mesh-vpn-tunneldigger \
-	gluon-tunneldigger-watchdog \
 	haveged \
 	iptables \
 	iwinfo
@@ -41,7 +39,7 @@ GLUON_SITE_PACKAGES := \
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := exp$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := 0.6+exp$(shell date '+%Y%m%d')
 
 
 ##	GLUON_RELEASE
@@ -65,3 +63,6 @@ GLUON_ATH10K_MESH ?= 11s
 
 # Languages to include
 GLUON_LANGS ?= en de
+
+# auch als "kaputt" deklarierte Firmware bauen
+BROKEN ?= 1
