@@ -6,19 +6,16 @@
 ##	GLUON_SITE_FEEDS
 #		for each feed name given, add the corresponding PACKAGES_* lines
 #		documented below
-GLUON_SITE_FEEDS='ffggrz_packages tunneldigger_packages'
+GLUON_SITE_FEEDS='ffggrz_packages'
 
 ##	PACKAGES_$feedname_REPO
 #		the  git repository from where to clone the package feed
 PACKAGES_FFGGRZ_PACKAGES_REPO=https://github.com/ffggrz/ffggrz-packages.git
-PACKAGES_TUNNELDIGGER_PACKAGES_REPO=https://github.com/ffggrz/tunneldigger-packages.git
 
 ##	PACKAGES_$feedname_COMMIT
 #		the version/commit of the git repository to clone
 PACKAGES_FFGGRZ_PACKAGES_COMMIT=e54aea7be8357df04f1b4c3111d15cbfdfb9b422
-PACKAGES_TUNNELDIGGER_PACKAGES_COMMIT=0ce36678f70e521c0f4fa556cfb054e272f51411
 
 ##  PACKAGES_$feedname_BRANCH
 #   the branch to check out
 PACKAGES_FFGGRZ_PACKAGES_BRANCH=master
-PACKAGES_TUNNELDIGGER_PACKAGES_BRANCH=master
