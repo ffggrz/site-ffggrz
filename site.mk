@@ -5,7 +5,6 @@
 #		The gluon-mesh-batman-adv-* package must come first because of the dependency resolution
 
 GLUON_SITE_PACKAGES := \
-	gluon-alfred \
 	gluon-respondd \
 	gluon-autoupdater \
 	gluon-config-mode-autoupdater \
@@ -30,7 +29,8 @@ GLUON_SITE_PACKAGES := \
 	gluon-status-page \
 	haveged \
 	iptables \
-	iwinfo
+	iwinfo \
+	respondd-module-airtime
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
