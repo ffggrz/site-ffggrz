@@ -32,7 +32,8 @@ GLUON_SITE_PACKAGES := \
 	gluon-mesh-vpn-tunneldigger \
 	haveged \
 	iptables \
-	iwinfo
+	iwinfo \
+	respondd-module-airtime
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
