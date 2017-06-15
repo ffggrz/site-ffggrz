@@ -24,6 +24,7 @@ GLUON_SITE_PACKAGES := \
 	gluon-neighbour-info \
 	gluon-mesh-batman-adv-15 \
 	gluon-mesh-vpn-tunneldigger \
+	gluon-tunneldigger-watchdog \
 	gluon-radvd \
 	gluon-setup-mode \
 	gluon-status-page \
