@@ -17,12 +17,14 @@ GLUON_SITE_PACKAGES := \
 	gluon-ebtables-filter-ra-dhcp \
 	gluon-web-admin \
 	gluon-web-autoupdater \
+	gluon-web-mesh-vpn-select \
 	gluon-web-node-role \
 	gluon-web-network \
 	gluon-web-private-wifi \
 	gluon-web-wifi-config \
 	gluon-neighbour-info \
 	gluon-mesh-batman-adv-15 \
+	gluon-mesh-vpn-fastd \
 	gluon-mesh-vpn-tunneldigger \
 	gluon-tunneldigger-watchdog \
 	gluon-radvd \
