@@ -2,8 +2,9 @@
 
 ## Für Gera-Greiz Firmware Builds genutzte Gluon Versionen:
 
-- __master:__ lauffähige Version für das aktuelle Gluon
-- __0.8.x:__ v2016.1.2
+- __stable:__ site configuration for stable firmware builds
+- __beta:__ site configuration for beta firmware builds
+- __experimental:__ site configuration for experimental firmware builds
 
 [Downloads](https://github.com/ffggrz/site-ffggrz/releases) der Site-Configs.
 

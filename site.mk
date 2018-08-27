@@ -54,7 +54,7 @@ DEFAULT_GLUON_RELEASE := 0.6+exp$(shell date '+%Y%m%d')
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 # Default priority for updates.
-GLUON_PRIORITY ?= 0
+GLUON_PRIORITY ?= 14
 
 # Region code required for some images; supported values: us eu
 GLUON_REGION ?= eu
@@ -66,4 +66,4 @@ GLUON_ATH10K_MESH ?= 11s
 GLUON_LANGS ?= en de
 
 # auch als "kaputt" deklarierte Firmware bauen
-BROKEN ?= 1
+BROKEN ?= 0
