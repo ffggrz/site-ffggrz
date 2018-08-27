@@ -4,7 +4,7 @@
 
 - __stable:__ site configuration for stable firmware builds
 - __beta:__ site configuration for beta firmware builds
-- __experimental:__ site configuration for experimental firmware builds
+- __master:__ site configuration for experimental firmware builds
 
 [Downloads](https://github.com/ffggrz/site-ffggrz/releases) der Site-Configs.
 
