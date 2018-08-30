@@ -1,38 +1,44 @@
 ##	gluon site.mk makefile example
 
-##	GLUON_SITE_PACKAGES
-#		specify gluon/openwrt packages to include here
-#		The gluon-mesh-batman-adv-* package must come first because of the dependency resolution
+##	GLUON_FEATURES
+#		Specify Gluon features/packages to enable;
+#		Gluon will automatically enable a set of packages
+#		depending on the combination of features listed
 
-GLUON_SITE_PACKAGES := \
-	gluon-respondd \
-	gluon-autoupdater \
-	gluon-config-mode-autoupdater \
-	gluon-config-mode-contact-info \
-	gluon-config-mode-core \
-	gluon-config-mode-geo-location \
-	gluon-config-mode-hostname \
-	gluon-config-mode-mesh-vpn \
-	gluon-ebtables-filter-multicast \
-	gluon-ebtables-filter-ra-dhcp \
-	gluon-web-admin \
-	gluon-web-autoupdater \
-	gluon-web-mesh-vpn-select \
-	gluon-web-node-role \
-	gluon-web-network \
-	gluon-web-private-wifi \
-	gluon-web-wifi-config \
-	gluon-neighbour-info \
-	gluon-mesh-batman-adv-15 \
-	gluon-mesh-vpn-fastd \
-	gluon-mesh-vpn-tunneldigger \
-	gluon-tunneldigger-watchdog \
-	gluon-radvd \
-	gluon-setup-mode \
-	gluon-status-page \
-	haveged \
-	iwinfo \
-	respondd-module-airtime
+GLUON_FEATURES := \
+	respondd \
+	autoupdater \
+	config-mode-autoupdater \
+	config-mode-contact-info \
+	config-mode-geo-location \
+	config-mode-hostname \
+	config-mode-mesh-vpn \
+	ebtables-filter-multicast \
+	ebtables-filter-ra-dhcp \
+	ebtables-limit-arp \
+	web-admin \
+	web-autoupdater \
+	web-mesh-vpn-select \
+	web-node-role \
+	web-network \
+	web-private-wifi \
+	web-wifi-config \
+	neighbour-info \
+	mesh-batman-adv-15 \
+	mesh-vpn-fastd \
+	mesh-vpn-tunneldigger \
+	tunneldigger-watchdog \
+	radvd \
+	radv-filterd \
+	status-page
+
+##	GLUON_SITE_PACKAGES
+#		Specify additional Gluon/OpenWrt packages to include here;
+#		A minus sign may be prepended to remove a packages from the
+#		selection that would be enabled by default or due to the
+#		chosen feature flags
+
+GLUON_SITE_PACKAGES := haveged iwinfo respondd-module-airtime
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
@@ -42,6 +48,7 @@ GLUON_SITE_PACKAGES := \
 
 DEFAULT_GLUON_RELEASE := 0.6+exp$(shell date '+%Y%m%d')
 
+# Variables set with ?= can be overwritten from the command line
 
 ##	GLUON_RELEASE
 #		call make with custom GLUON_RELEASE flag, to use your own release version scheme.
@@ -50,7 +57,6 @@ DEFAULT_GLUON_RELEASE := 0.6+exp$(shell date '+%Y%m%d')
 #		would generate images named like this:
 #			gluon-ff%site_code%-23.42+5-%router_model%.bin
 
-# Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 # Default priority for updates.
@@ -59,11 +65,11 @@ GLUON_PRIORITY ?= 0
 # Region code required for some images; supported values: us eu
 GLUON_REGION ?= eu
 
-# Mesh protocol for ath10k-based devices (11s or ibss)
-GLUON_ATH10K_MESH ?= 11s
-
 # Languages to include
 GLUON_LANGS ?= en de
+
+# Mesh protocol
+GLUON_WLAN_MESH ?= 11s
 
 # auch als "kaputt" deklarierte Firmware bauen
 BROKEN ?= 1

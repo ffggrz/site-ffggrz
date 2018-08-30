@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2016-07-30 15:18+0200\n"
+"PO-Revision-Date: 2018-06-26 19:18+0200\n"
 "Last-Translator: Jörg Deckert <joergd@bitquell.de>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -14,6 +14,15 @@ msgid "gluon-config-mode:welcome"
 msgstr ""
 "Willkommen zum Einrichtungsassistenten für deinen neuen Freifunk-Knoten der Community Gera-Greiz.<br />"
 "<p>Fülle das Formular deinen Vorstellungen entsprechend aus und sende es ab.</p>"
+
+msgid "gluon-config-mode:domain"
+msgstr "Domäne"
+
+msgid "gluon-config-mode:domain-select"
+msgstr ""
+"Hier hast du die Möglichkeit, die Mesh-Domäne, in der sich dein Knoten "
+"befindet, auszuwählen. Bitte denke daran, dass sich dein Knoten nur mit den "
+"Knoten der ausgewählten Domäne verbinden kann."
 
 msgid "gluon-config-mode:pubkey"
 msgstr ""
@@ -45,13 +54,26 @@ msgstr ""
 "Betrieb für fünf Sekunden den Reset-Button. Das Gerät wird dann im Config Mode neustarten.<br />"
 "Viel Spaß mit deinem Knoten und bei der Erkundung von Freifunk!<br />"
 
-msgid "gluon-config-mode:altitude-label"
-msgstr "Höhe"
-
-msgid "gluon-config-mode:altitude-help"
+# Leave empty to use the default text, which can be found in:
+# package/gluon-config-mode-hostname/i18n/
+msgid "gluon-config-mode:hostname-help"
 msgstr ""
-"Die Höhenangabe ist optional und sollte nur gesetzt werden, wenn ein "
-"exakter Wert bekannt ist."
+
+# Leave empty to use the default text, which can be found in:
+# package/gluon-config-mode-geo-location/i18n/
+msgid "gluon-config-mode:geo-location-help"
+msgstr ""
+
+msgid "gluon-config-mode:altitude-label"
+msgstr ""
+
+# Leave empty to use the default text, which can be found in:
+# package/gluon-config-mode-contact-info/i18n/
+msgid "gluon-config-mode:contact-help"
+msgstr ""
+
+msgid "gluon-config-mode:contact-note"
+msgstr ""
 
 msgid "gluon-web-node-role:role:node"
 msgstr ""
@@ -68,17 +90,3 @@ msgstr ""
 msgid "gluon-web-node-role:role:service"
 msgstr ""
 "Knoten mit Dienst"
-
-msgid ""
-"Please provide your contact information here to allow others to contact "
-"you. Note that this information will be visible <em>publicly</em> on "
-"the internet together with your node's coordinates."
-msgstr ""
-"Bitte hinterlege hinter <b>Kontakt</b> einen Hinweis, um anderen zu ermöglichen, "
-"Kontakt mit dir aufzunehmen. Die Angabe einer E-Mail Adresse wird dringend "
-"empfohlen. Mit dieser können wir dich erreichen, falls es ein Problem mit deinem "
-"Freifunk-Knoten gibt.<br />"
-"Beachte, dass dieser Hinweis auch <em>öffentlich</em> im Internet, zusammen mit "
-"den Koordinaten deines Knotens, einsehbar sein wird. Deswegen kannst Du auf "
-"Anfrage auch eine Adresse in der Form &lt;name@freifunk-gera-greiz.de&gt; "
-"von uns bekommen, von welcher dann an eine beliebige Adresse weitergeleitet wird."
