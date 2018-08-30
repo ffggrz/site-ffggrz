@@ -29,6 +29,7 @@ GLUON_FEATURES := \
 	mesh-vpn-tunneldigger \
 	tunneldigger-watchdog \
 	radvd \
+	radv-filterd \
 	status-page
 
 ##	GLUON_SITE_PACKAGES
