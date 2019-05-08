@@ -6,31 +6,22 @@
 #		depending on the combination of features listed
 
 GLUON_FEATURES := \
-	respondd \
 	autoupdater \
-	config-mode-autoupdater \
-	config-mode-contact-info \
-	config-mode-geo-location \
-	config-mode-hostname \
-	config-mode-mesh-vpn \
 	ebtables-filter-multicast \
 	ebtables-filter-ra-dhcp \
 	ebtables-limit-arp \
-	web-admin \
-	web-autoupdater \
-	web-mesh-vpn-select \
-	web-node-role \
-	web-network \
-	web-private-wifi \
-	web-wifi-config \
-	neighbour-info \
 	mesh-batman-adv-15 \
 	mesh-vpn-fastd \
 	mesh-vpn-tunneldigger \
 	tunneldigger-watchdog \
 	radvd \
 	radv-filterd \
-	status-page
+	respondd \
+	status-page \
+	web-mesh-vpn-select \
+	web-private-wifi \
+	web-advanced \
+	web-wizard
 
 ##	GLUON_SITE_PACKAGES
 #		Specify additional Gluon/OpenWrt packages to include here;
