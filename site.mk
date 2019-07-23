@@ -13,7 +13,6 @@ GLUON_FEATURES := \
 	mesh-batman-adv-15 \
 	mesh-vpn-fastd \
 	mesh-vpn-tunneldigger \
-	tunneldigger-watchdog \
 	radvd \
 	radv-filterd \
 	respondd \
@@ -37,7 +36,7 @@ GLUON_SITE_PACKAGES := haveged iwinfo respondd-module-airtime
 #			opkg compare-versions "$1" '>>' "$2"
 #		to decide if a version is newer or not.
 
-DEFAULT_GLUON_RELEASE := 0.6+exp$(shell date '+%Y%m%d')
+DEFAULT_GLUON_RELEASE := $(shell date '+%Y%m%d')-exp
 
 # Variables set with ?= can be overwritten from the command line
 
@@ -59,8 +58,11 @@ GLUON_REGION ?= eu
 # Languages to include
 GLUON_LANGS ?= en de
 
+# Build only sysupgrade images for deprecated devices
+GLUON_DEPRECATED ?= upgrade
+
 # Mesh protocol
 GLUON_WLAN_MESH ?= 11s
 
-# auch als "kaputt" deklarierte Firmware bauen
+# Build images also for devices marked broken
 BROKEN ?= 1
