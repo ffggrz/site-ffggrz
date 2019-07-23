@@ -62,5 +62,5 @@ GLUON_LANGS ?= en de
 # Mesh protocol
 GLUON_WLAN_MESH ?= 11s
 
-# auch als "kaputt" deklarierte Firmware bauen
+# Build images also for devices marked broken
 BROKEN ?= 1
