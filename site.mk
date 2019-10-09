@@ -12,11 +12,10 @@ GLUON_FEATURES := \
 	mesh-batman-adv-15 \
 	mesh-vpn-fastd \
 	mesh-vpn-tunneldigger \
-	radvd \
 	radv-filterd \
 	respondd \
 	status-page \
-	web-mesh-vpn-select \
+	web-mesh-vpn-fastd \
 	web-private-wifi \
 	web-advanced \
 	web-wizard
