@@ -19,7 +19,7 @@ GLUON_FEATURES := \
 	web-mesh-vpn-fastd \
 	web-private-wifi \
 	web-advanced \
-	web-wizard \
+	web-wizard
 
 ##	GLUON_SITE_PACKAGES
 #		Specify additional Gluon/OpenWrt packages to include here;
@@ -28,13 +28,13 @@ GLUON_FEATURES := \
 #		chosen feature flags
 
 GLUON_SITE_PACKAGES := \
-	iwinfo \
+	iwinfo
 
 ##	GLUON_SITE_PACKAGES_standard
 #		Same as GLUON_SITE_PACKAGES but only for devices of the standard device-class
 
 GLUON_SITE_PACKAGES_standard := \
-	respondd-module-airtime \
+	respondd-module-airtime
 
 ##	DEFAULT_GLUON_RELEASE
 #		version string to use for images
@@ -66,9 +66,6 @@ GLUON_LANGS ?= en de
 
 # Build only sysupgrade images for deprecated devices
 GLUON_DEPRECATED ?= upgrade
-
-# Mesh protocol
-GLUON_WLAN_MESH ?= 11s
 
 # Build images also for devices marked broken
 BROKEN ?= 1
