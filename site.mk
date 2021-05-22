@@ -9,6 +9,7 @@ GLUON_FEATURES := \
 	autoupdater \
 	ebtables-filter-multicast \
 	ebtables-filter-ra-dhcp \
+	ebtables-source-filter \
 	mesh-batman-adv-15 \
 	mesh-vpn-fastd \
 	mesh-vpn-tunneldigger \
@@ -28,6 +29,11 @@ GLUON_FEATURES := \
 
 GLUON_SITE_PACKAGES := \
 	iwinfo \
+
+##	GLUON_SITE_PACKAGES_standard
+#		Same as GLUON_SITE_PACKAGES but only for devices of the standard device-class
+
+GLUON_SITE_PACKAGES_standard := \
 	respondd-module-airtime \
 
 ##	DEFAULT_GLUON_RELEASE
