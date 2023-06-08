@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Project-Id-Version: PACKAGE VERSION\n"
-"PO-Revision-Date: 2019-05-04 17:18+0200\n"
+"PO-Revision-Date: 2023-06-05 17:18+0200\n"
 "Last-Translator: Jörg Deckert <joergd@bitquell.de>\n"
 "Language-Team: German\n"
 "Language: de\n"
@@ -51,26 +51,6 @@ msgstr ""
 "<p>Vergiss nicht das Netzwerkkabel vom LAN Port in den WAN Port "
 "umzustecken.</p>"
 
-msgid "gluon-config-mode:nokey"
-msgstr ""
-"<p>Bitte schicke uns eine E-Mail mit dem Namen deines Knotens "
-"(<em><%= pcdata(hostname) %></em>) und ein paar Informationen an <a href="
-"\"mailto:keys@freifunk-gera-greiz.de?"
-"subject=<%= urlencode('Neuer Freifunk-Knoten: ' .. hostname) %>&amp;"
-"body=<%= urlencode('Name: ' .. hostname .. '\nKey:  *** VPN ohne Key - TunnelDigger ***\nMac:  ' .. sysconfig.primary_mac) %>"
-"<%= urlencode('\n\nIch habe zur Kenntnis genommen, dass der im ') %>"
-"<%= urlencode('Knoten von mir eingetragene Kontakt im Meshnetz ') %>"
-"<%= urlencode('öffentlich abfragbar ist und von beliebigen Diensten ') %>"
-"<%= urlencode('(z.B. der Freifunk-Karte) veröffentlicht werden kann.') %>"
-"<%= urlencode('\n\nGruß, \n\n') %>"
-"\">keys@freifunk-gera-greiz.de</a>. Deine E-Mail Adresse wird "
-"selbstverständlich vertraulich behandelt und nicht weitergegeben.</p>"
-"<p>Dein Knoten startet gerade neu und wird anschließend versuchen, sich mit "
-"anderen Freifunkknoten in seiner Nähe über WLAN sowie über deine"
-"Internetverbindung über das VPN-Gateway zu verbinden.</p>"
-"<p>Vergiss nicht das Netzwerkkabel vom LAN Port in den WAN Port "
-"umzustecken.</p>"
-
 msgid "gluon-config-mode:novpn"
 msgstr ""
 "<p><strong>Du hast ausgewählt die Internetverbindung (Mesh-VPN) nicht zu "
@@ -99,21 +79,15 @@ msgstr ""
 "Betrieb für ca 10 Sekunden den Reset-Button. Das Gerät wird dann im Config Mode neustarten.<br />"
 "Viel Spaß mit deinem Knoten und bei der Erkundung von Freifunk!<br />"
 
-# Leave empty to use the default text, which can be found in:
-# package/gluon-config-mode-hostname/i18n/
 msgid "gluon-config-mode:hostname-help"
 msgstr ""
 
-# Leave empty to use the default text, which can be found in:
-# package/gluon-config-mode-geo-location/i18n/
 msgid "gluon-config-mode:geo-location-help"
 msgstr ""
 
 msgid "gluon-config-mode:altitude-label"
 msgstr ""
 
-# Leave empty to use the default text, which can be found in:
-# package/gluon-config-mode-contact-info/i18n/
 msgid "gluon-config-mode:contact-help"
 msgstr ""
 
